@@ -27,3 +27,10 @@ import_config "#{Mix.env}.exs"
 config :phoenix, :generators,
   migration: true,
   binary_id: false
+
+# Configure guardian
+config :guardian, Guardian,
+  issuer: "PhoenixToggl",
+  ttl: { 3, :days },
+  verify_issuer: true,
+  serializer: PhoenixToggl.GuardianSerializer

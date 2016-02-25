@@ -36,7 +36,12 @@ defmodule Phoenixtoggle.Mixfile do
      {:phoenix_html, "~> 2.4"},
      {:phoenix_live_reload, "~> 1.0", only: :dev},
      {:gettext, "~> 0.9"},
-     {:cowboy, "~> 1.0"}]
+     {:cowboy, "~> 1.0"},
+     {:comeonin, "~> 2.0"},
+     {:guardian, "~> 0.9.0"},
+     {:credo, "~> 0.2", only: [:dev, :test]},
+    #  {:time, github: "bitwalker/timex"},
+     {:mix_test_watch, "~> 0.2", only: :dev}]
   end
 
   # Aliases are shortcut or tasks specific to the current project.
